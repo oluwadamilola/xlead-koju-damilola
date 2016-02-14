@@ -1,0 +1,93 @@
+body {
+  min-height: 2000px;
+  background: #F7F7F7
+}
+.nav-all{
+    background-color: #1DC3DE
+}
+.navbar-static-top {
+  margin-bottom: 15px;
+
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    padding:1px;
+    margin:0px;
+    
+}
+
+.navbar-collapse.collapse {
+    display: block;
+    height: auto;
+    padding-bottom: 0;
+    overflow: visible;
+}
+.navbar.navbar-default.navbar-static-top {
+    background: #1DC3DE;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.navbar-brand {
+    padding-top:5px;
+}
+.left-nav{
+    background: #F7F7F7;
+}
+.center-nav{
+    background: #fff;
+    border: solid 1px #E8E6E6;
+    min-height: 500px;
+}
+.list-group-item {
+    background-color: transparent;
+     border: none; 
+}
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    color: #000;
+    background-color: #FFFFFF;
+    border-color: #337ab7;
+    font-weight: bold;
+    color: white;
+}
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus {
+    background: transparent;
+    font-weight: bold;
+    color: white;
+}
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus {
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-bottom: solid #000 1px;
+}
+
+.nav-tabs>li>a {
+    border: none;
+    padding: 5px 10px 5px 10px;
+}
+.glyphicon-bell{
+    color:white;
+    padding: 1px 0px 1px;
+}
+.panel-footer{
+    background-color: white;
+}
+.btn-default{
+    color: blue;
+}
+.collapse navbar-collapse>.nav navbar-nav>li.active>li>a{
+    color: white;
+}
+.navbar-nav>li>a{
+    color: white;
+}
