@@ -1,58 +1,283 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Task Manager</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-<section id="task-container">
-	<div class="task-holder">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-	<header>TASK MANAGER</header>
+    <title>Static Top Navbar Example for Bootstrap</title>
 
-	<div class="main-task" id="grid-box">
-	<section class="task-content">
-	<h2>Monday</h2>
-	<p>Day 1</p>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-	
-		
-		
-	</section>
+    <!-- Custom styles for this template -->
+    <link href="navbar-static-top.css" rel="stylesheet">
+    <!--awesome fonts-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-	<section class="task-content">
-	<h2>Tuesday</h2>
-	<p>Day 2</p>
-	
-		
-	</section>
+  </head>
 
-	<section class="task-content">
-	<h2>Wednesday</h2>
-	<p>Day 3</p>
-	
-		
-	</section>
+  <body>
 
-	<section class="task-content">
-	<h2>Thursay</h2>
-	<p>Day 4</p>
-	
-	</section>
+    <!-- Static navbar -->
+    
+         <nav class="nav-all">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+          <img src="brand-white.png" width="70" height="35" alt="brand">
+      </a>
+    </div>
 
-	<section class="task-content">
-	<h2>Friday</h2>
-	<p>Day 5</p>
-	
-		
-	</section>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Message</a></li>
+        <li><a href="#">Docs</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a></li>
+            
+     <li> <div class="dropdown">
+  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     <li class="active"><a href="#"><img src="avatar-dhg.png" alt="img" class="img-circle" width="35" height="30"></a></li>
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dLabel">
+    <li>action</li>
+    <li>login</li>
+  </ul>
+</div></li>
+      </ul>
+          </ul>
+    </div>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default hidden">submit</button>
+      </form>
+      
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<br>
+ <div class="container">
+        <div class="row">
+            <div class="col-md-3 left-nav">
+                <div class="thumbnail">
+                <img src="desert.jpg">
+                <div class="caption">
+                    <h3>Dave Gamache</h3>
+                    <p>I wish am a little bit taller i wish i was a baller i wish i had a girl...also</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Friends</a> <a href="#" class="btn btn-default" role="button">Enemy</a></p>
+                </div>
+                </div>
+
+                    <div class="panel panel-default">
+            <div class="panel-body">
+                <ul>
+                    <li><strong>ABOUT</strong></li>
+                    <li>went to <a href="#">Oh,Canada</a></li>
+                    <li>Became friends with<a href="#">Obama</a></li>
+                    <li>worked at<a href="#">Github</a></li>
+                    <li>live in<a href="#">san fransciso</a></li>
+                </ul>
+            </div>
+        </div>
+          <p>Photos <a href="#">Edit</a></p>
+          <table>
+              <tr>
+        <td><img src="desert.jpg" class="img-thumbnail"></td>
+        <td><img src="koala.jpg"  class="img-thumbnail"></td>
+              </tr>
+              <tr>
+        <td><img src="penguins.jpg" class="img-thumbnail"></td>
+       <td> <img src="koala.jpg" class="img-thumbnail"></td>
+              </tr>
+              <tr>
+                  <td><img src="desert.jpg" class="img-thumbnail"></td>
+                  <td><img src="koala.jpg" class="img-thumbnail"></td>
+              </tr>
+          </table>
+            
+</div>
+
+            <div class="col-md-6 center-nav">
+                    <br>
+                    <div class="input-group">
+                    <input type="text" class="form-control" placeholder="message">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></button>
+                    </span>
+                    </div><br><!-- /input-group -->
+                    <div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="img-circle" src="desert.jpg" width="50" height="50">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">Dave Gamache</h4>
+    <p>hello! So many times people say to me, "I'd like to double my
+income in the next year." But then you look at their
+actions and they're not doing the things that </p>
+  </div>
+</div>
+                         
+                        <img src="desert.jpg" alt="image" class="img-thumbnail" width="250" height="100">
+                        <img src="desert.jpg" alt="image" class="img-thumbnail" width="200" height="100">
+                    
+                    
+                        <img src="koala.jpg" alt="image" class="img-thumbnail" width="200" height="100">
+                        <img src="penguins.jpg" alt="image" class="img-thumbnail" width="250" height="100">
+                        <br>
+                       <br>
+                        <ul>
+                        <div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="img-circle" src="penguins.jpg" width="50" height="50">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">Modupeola Bello</h4>
+    <p>Did you know basically put, the law of attraction says that like attracts
+like. But we're really talking at a level of thought.read the secret book to know more.
+with Examples from entreprenuer aound the world </p>
+  </div>
+</div><br>
+       <ul class="media-list">
+  <li class="media">
+    <div class="media-left">
+      <a href="#">
+        <img class="img-circle" src="desert.jpg" width="50" height="50">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Naomi Scott</h4>
+      <p>Did you know basically put, the law of attraction says that like attracts
+like. But we're really talking at a level of thought.read the secret book to know more.
+with Examples from entreprenuer aound the world</p>
+    </div>
+  </li>
+</ul>
+</ul>
+<br>
+ 
+<hr>
+<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="img-circle" src="tulips.jpg" width="50" height="50">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">Kerry Ngozi</h4>
+    <p>Creation is always happening. Every time an individual has
+a thought, or a prolonged chronic way of thinking, they're in
+the creation process. Something is going to manifest out of
+those thoughts.  </p>
+  </div>
+</div> 
+<img src="koala.jpg" width="500" height="450">
+<br>
+<br> 
+<ul> 
+    <ul class="media-list">
+  <li class="media">
+    <div class="media-left">
+      <a href="#">
+        <img class="img-circle" src="jellyfish.jpg" width="50" height="50">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Gavin Code</h4>
+      <p>Did you know basically put, the law of attraction says that like attracts
+like. But we're really talking at a level of thought.read the secret book to know more.
+with Examples from entreprenuer aound the world</p>
+    </div>
+  </li>
+</ul>
+</ul>    
+</div>
+         
+            <div class="col-md-3 right-nav">
+                <div class="alert alert-warning alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Visit your profile!</strong> Better check yourself, you're not looking too good.
+</div>
+<p><strong>Sponsored</strong></p>
+    <div class="thumbnail">
+      <img src="home.jpg">
+      <div class="caption">
+        <h3>It might be time to visit ice land</h3>
+        <p>Iceland is so chill, and everything looks so cool here.Also, we heard the people are pretty nice. What are you waiting for?</p>
+        <p><a href="#" class="btn btn-primary" role="button">Buy a ticket</a></p>
+      </div>
+    </div>
+    <div class="panel panel-default">
+  <div class="panel-body">
+      <p>Likes .<a href="#">View All</a></p>
+    <div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="img-circle" src="penguins.jpg" width="50" height="50">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">Jacob Thornton @fat</h4>
+    <p><button type="button" class="btn btn-default"><i class="fa fa-user-plus"></i>follow</button></p>
+  </div>
+</div>
+<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="img-circle" src="koala.jpg" width="50" height="50">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">Mark Otto @mdo</h4>
+    <p><button type="button" class="btn btn-default"><i class="fa fa-user-plus"></i>follow</button></p>
+  </div>
+</div>
+<hr>
+<p>Dave really likes these nerds, no one knows why though</p>
+  </div>
+</div>
+<div class="panel-footer"> <p>© 2015 Bootstrap
+ <a href="#">About</a>  <a href="#">Help</a>  <a href="#">Terms</a>  <a href="#">Privacy</a>
+ <a href="#">cookies</a>  <a href="#">Ads</a>  <a href="#">Info</a>  <a href="#">Brand</a> <a href="#">Blog</a>
+ <a href="#">Status</a>  <a href="#">Apps</a>  <a href="#">Jobs</a>  <a href="#">Advertise</a>
+ </p>
+</div>
+</div>
+  </div>
+</div>
+ </div>
+    
+        </div>
+    
 
 
-		
-	</div>
-		
-	</div>
-</section>
-
-</body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
